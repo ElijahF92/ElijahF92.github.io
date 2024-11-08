@@ -1,62 +1,49 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
+    <title>Elijah Ferrin</title>
+
     <style>
-        body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
-        .container {
-            background-color: #1e1e1e;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-            max-width: 400px;
-            text-align: center;
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
-        img {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
+
+        .slide-in-left {
+            transform: translateX(-100%);
+            opacity: 0;
+            animation: slideInLeft 1s ease forwards;
         }
-        h1 {
-            font-size: 24px;
-            margin: 10px 0;
-        }
-        p {
-            font-size: 16px;
-            margin: 5px 0;
-        }
-        a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        .slide-in-right {
+            transform: translateX(100%);
+            opacity: 0;
+            animation: slideInRight 2s ease forwards;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <img src="https://static.wikia.nocookie.net/surfs-up/images/5/57/Cody_%28Surf%27s_Up%29_Render.png/revision/latest?cb=20220803174656" alt="Profile Picture">
-        <h1 id="name">Elijah Ferrin</h1>
-        <p id="location">Hong Kong</p>
-        <p id="bio">18 Year old Born And Raised in Hong Kong</p>
-        <h3>Connect with me:</h3>
-        <p>
-            <a href="https://www.instagram.com/elijah_ferrin/" id="Instagram">Instagram</a> | 
-            <a href="https://www.linkedin.com/in/elijah-ferrin-b229b7287/" id="linkedin">LinkedIn</a> | 
-            <a href="https://github.com/ElijahF92" id="github">GitHub</a>
-        </p>
+<body style="background-color: #071402;">
+    <div style="text-align: center; font-size: 2em; color: #bb7c52">
+        <p class="slide-in-left" style="animation-delay: 0.5s;">Hello, I am Elijah.</p>
+        <p class="slide-in-right" style="animation-delay: 0.5s;">I am a Half-Stack developer.</p>
     </div>
 </body>
 </html>
