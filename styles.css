@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 :root { 
-    --theme_main: #146247;
+    --theme_main: #1a8761;
     --theme_accent: #0;
 }
 
@@ -198,4 +198,46 @@ button:hover {
 
 .skills-container {
     display: flex; /* Use flexbox for side-by-side layout */
+}
+
+.contact {
+    margin-top: 80vh;
+    text-align: center;
+    padding: 2rem;
+}
+
+.form-group {
+    margin: 1rem 0;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.8rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }

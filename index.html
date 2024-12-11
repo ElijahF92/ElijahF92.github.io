@@ -17,7 +17,7 @@
             <a href="#">Home</a>
             <a href="Photo/photo.html">Photography</a>
             <a href="#">Code</a>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
         </div>
         <div class="socials">
             <a href="https://www.instagram.com/elijah_ferrin/" target="_blank" class="icon-container">
@@ -45,13 +45,14 @@
                         <img src="Icons/lightroom.webp" alt="Lightroom Icon"/>
                         <img src="Icons/cannon.jpg" alt="Cannon Icon" />
                     </div>
+                    <!--
                     <h4>My kit</h4>
                     <div class="kit-buttons">
                         <img src="Icons/placeholder.png" alt="Empty Icon"/>
                         <img src="Icons/placeholder.png" alt="Empty Icon"/>
                     </div>
                 </div>
-
+                    -->
                 <div class="coding">
                     <h3>Coding</h3>
                     <div class="skill-buttons">
@@ -64,6 +65,7 @@
                     </div>
                 </div>
             </div>
+            <!--
             <div class="tools">
                 <h3>Tools</h3>
                 <div class="tool-buttons">
@@ -71,6 +73,22 @@
                     <img src="Icons/placeholder.png" alt="Empty Icon"/>
                 </div>
             </div>
+            -->
+        </div>
+        <div class="contact" id="contact">
+            <div class="title">Contact Me</div>
+            <form action="mailto:eferrin92@gmail.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
     </div>
     <script src="script.js"></script>
