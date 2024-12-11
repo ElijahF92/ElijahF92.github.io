@@ -1,0 +1,43 @@
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.terminal {
+    width: 60vw;
+    height: 60vh;
+    background-color: #111;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.prompt {
+    margin-right: 5px;
+}
+
+#command-input {
+    background: none;
+    border: none;
+    color: #00ff00;
+    outline: none;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#command-input::placeholder {
+    color: #00ff00;
+    opacity: 0.5;
+}

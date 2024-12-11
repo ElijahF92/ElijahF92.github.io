@@ -1,0 +1,201 @@
+/*import font*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+:root { 
+    --theme_main: #146247;
+    --theme_accent: #0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1b2128;
+    color: var(--theme_main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    width: 100%;
+    height: 300vh;
+    box-shadow: none;
+    position: relative;
+}
+
+.nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.nav a {
+    background-color: #373C41;
+    text-decoration: none;
+    color: #3F8968;
+    padding: 10px 20px;
+    border: 0px solid var(--theme_main);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: var(--theme_main)8;
+    color: #494D52;
+}
+
+.content {
+    /* position: fixed; */
+    text-align: left;
+    margin-top: 80px;
+}
+
+.name {
+    width: 13ch;
+    font-size: 3em;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 200px;
+    font-family: 'Nunito', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    animation: typing 1s steps(13), blink .5s step-end infinite alternate;
+}
+
+.skills_preview {
+    width: 43ch;
+    font-size: 2em;
+    margin-left: 50px;
+    font-family: 'Nunito', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    visibility: hidden;
+    animation: typing 3.3s steps(43) 1.2s forwards, blink .5s step-end infinite alternate;
+    color: #4f6859;
+}
+/*
+.name-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.aboutmetext {
+    position: fixed;
+    left: 100%;
+    top: 30%;
+    font-family: monospace;
+    font-size: 2em;
+    width: 80%;
+}
+*/
+@keyframes blink {
+    50% { border-color: transparent;}
+}
+
+@keyframes typing {
+    from { width: 0; visibility: visible;}
+    to {visibility: visible; }
+}
+
+.socials {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.socials img {
+    width: 3vw;
+    transition: transform 0.2s;
+    filter: invert(0.6);
+}
+
+.icon-container {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter than the background */
+    border-radius: 10px; /* Beveled corners */
+    padding: 10px; /* Space around the icon */
+    transition: transform 0.2s; /* Transition for the jump effect */
+}
+
+.terminal-icon {
+    position: absolute;
+    top: 5vh;
+    left: 10px;
+    z-index: 10;
+}
+
+.terminal-icon a {
+    display: inline-block;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.terminal-icon img {
+    width: 5vh;
+    height: auto;
+}
+
+.icon-container:hover {
+    transform: translateY(-5px); /* Jump effect on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter on hover */
+}
+
+.skills {
+    margin-top: 80vh;
+    font-size: 2em;
+    margin-left: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-family: monospace;
+    color: --theme_main;
+
+}
+
+.skills img {
+    width: 7vw;
+    border: 2px solid #4f6859;
+    border-radius: 20%;
+    padding: 1%;
+}
+
+.skills img:hover{
+    border: 2px solid #a4d3b7;
+}
+
+.skill-buttons, .kit-buttons, .tool-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    background-color: #373C41; /* Button background */
+    color: var(--theme_main); /* Button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.photography{
+    width: 50vw;
+}
+
+button:hover {
+    background-color: #d3c6a0; /* Darker on hover */
+}
+
+.skills-container {
+    display: flex; /* Use flexbox for side-by-side layout */
+}
