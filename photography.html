@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography | Elijah Ferrin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>EF</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="photography.html">Photography</a></li>
+                <li><a href="development.html">Development</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="photography-main">
+        <div class="collections-container">
+            <div class="collections-sidebar">
+                <button class="collection-btn" data-collection="featured">Featured</button>
+                <button class="collection-btn" data-collection="time">The Suspended Decay of Now</button>
+            </div>
+            
+            <div class="gallery-container">
+                <div class="gallery-header">
+                    <h2>Collection Title</h2>
+                    <p>Collection description will appear here.</p>
+                </div>
+                
+                <div class="gallery-grid" oncontextmenu="return false;">
+                    <!-- Gallery items will be loaded dynamically via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="lightbox" oncontextmenu="return false;">
+        <div class="lightbox-content">
+            <span class="lightbox-prev"><i class="fas fa-chevron-left"></i></span>
+            <div class="lightbox-image-container">
+                <img src="" class="lightbox-image" alt="Expanded Image" oncontextmenu="return false;">
+                <div class="lightbox-title"></div>
+            </div>
+            <span class="lightbox-next"><i class="fas fa-chevron-right"></i></span>
+        </div>
+        <span class="lightbox-close"><i class="fas fa-times"></i></span>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Elijah Ferrin</h2>
+                    <p>Creating at the intersection of technology and art.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/ElijahF92" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/elijah_ferrin/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="photography.html">Photography</a>
+                    <a href="development.html">Development</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Elijah Ferrin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -3,94 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elijah Ferrin</title>
+    <title>Elijah Ferrin | Creative Professional</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="terminal-icon">
-        <a href="Terminal Site/terminal.html" class="rounded-icon">
-            <img src="Icons/terminal.png" alt="Terminal Icon" />
-        </a>
-    </div>
-    <div class="container">
-        <div class="nav">
-            <a href="#">Home</a>
-            <a href="Photo/photo.html">Photography</a>
-            <a href="#">Code</a>
-            <a href="#contact">Contact</a>
+    <div class="cursor"></div>
+    
+    <header>
+        <div class="logo">
+            <h1>EF</h1>
         </div>
-        <div class="socials">
-            <a href="https://www.instagram.com/elijah_ferrin/" target="_blank" class="icon-container">
-                <img src="Icons/icon2.png" alt="Instagram Icon" class="Instagram" />
-            </a>
-            <a href="https://github.com/ElijahF92" target="_blank" class="icon-container">
-                <img src="Icons/icon1.png" alt="Github Icon" class="Github" />
-            </a>
-            <a href="https://www.linkedin.com/in/elijah-ferrin-b229b7287/" target="_blank" class="icon-container">
-                <img src="Icons/icon3.png" alt="LinkedIn Icon" class="Github" />
-            </a>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="development.html">Development</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
         </div>
-        <div class="content">
-            <div class="name"> Elijah Ferrin </div>
-            <div class="skills_preview"> Photographer • Developer • Environmentalist </div>
-        </div>
+    </header>
 
-        <div class="skills">
-            <div class="title"> Skills </div>
-            <div class="skills-container">
-                <div class="photography">
-                    <h3>Photography</h3>
-                    <div class="skill-buttons">
-                        <img src="Icons/photoshop.png"/>
-                        <img src="Icons/lightroom.webp" alt="Lightroom Icon"/>
-                        <img src="Icons/cannon.jpg" alt="Cannon Icon" />
-                    </div>
-                    <!--
-                    <h4>My kit</h4>
-                    <div class="kit-buttons">
-                        <img src="Icons/placeholder.png" alt="Empty Icon"/>
-                        <img src="Icons/placeholder.png" alt="Empty Icon"/>
-                    </div>
+    <main class="home-main">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="animate-text">Elijah Ferrin</h1>
+                <h2 class="animate-text delay-1">Developer. Photographer. Creator.</h2>
+                <div class="hero-cta animate-text delay-2">
+                    <a href="#about" class="btn primary">About Me</a>
+                    <a href="#work" class="btn secondary">My Work</a>
                 </div>
-                    -->
-                <div class="coding">
-                    <h3>Coding</h3>
-                    <div class="skill-buttons">
-                        <img src="Icons/python.webp" alt="Python Icon"/>
-                        <img src="Icons/swiftt.png" alt="Swiftt Icon"/>
-                        <img src="Icons/processing.svg" alt="Processing Icon" />
-                        <img src="Icons/html.svg.png" alt="HTML Icon"/>
-                        <img src="Icons/css.png" alt="CSS Icon"/>
-                        <img src="Icons/js.svg.png" alt="Java Script Icon" />
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-frame">
+                            <img src="portrait.jpg">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>Hello! I'm Elijah Ferrin, a multidisciplinary creative professional with a passion for development and photography. With a keen eye for detail and a love for elegant solutions, I create immersive digital experiences and capture compelling visual stories.</p>
+                        
+                        <p>My approach combines technical expertise with creative vision, allowing me to develop innovative solutions that are both functional and aesthetically pleasing. Whether I'm crafting code or composing a photograph, I bring dedication, creativity, and precision to every project.</p>
+                        
+                        <p>When I'm not working, you can find me exploring new technologies, experimenting with photography techniques, or seeking inspiration in nature.</p>
                     </div>
                 </div>
             </div>
-            <!--
-            <div class="tools">
-                <h3>Tools</h3>
-                <div class="tool-buttons">
-                    <img src="Icons/placeholder.png" alt="Empty Icon"/>
-                    <img src="Icons/placeholder.png" alt="Empty Icon"/>
+        </section>
+
+        <section id="work" class="work">
+            <div class="container">
+                <h2 class="section-title">My Work</h2>
+                <div class="work-grid">
+                    <div class="work-item" data-category="development">
+                        <div class="work-item-inner">
+                            <div class="work-image">
+                                <!-- Replace with development work thumbnail -->
+                                <div class="work-placeholder">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                            </div>
+                            <div class="work-overlay">
+                                <h3>Development</h3>
+                                <p>Explore my coding projects and technical skills</p>
+                                <a href="development.html" class="btn secondary">View Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item" data-category="photography">
+                        <div class="work-item-inner">
+                            <div class="work-image">
+                                <!-- Replace with photography work thumbnail -->
+                                <div class="work-placeholder">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                            </div>
+                            <div class="work-overlay">
+                                <h3>Photography</h3>
+                                <p>Browse my visual portfolio and collections</p>
+                                <a href="photography.html" class="btn secondary">View Gallery</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Elijah Ferrin</h2>
+                    <p>Creating at the intersection of technology and art.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/ElijahF92" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/elijah_ferrin/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="photography.html">Photography</a>
+                    <a href="development.html">Development</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Elijah Ferrin. All rights reserved.</p>
+            </div>
         </div>
-        <div class="contact" id="contact">
-            <div class="title">Contact Me</div>
-            <form action="mailto:eferrin92@gmail.com" method="POST" enctype="text/plain">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
