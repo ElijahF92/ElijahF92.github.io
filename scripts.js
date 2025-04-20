@@ -109,7 +109,7 @@ if (document.querySelector('.photography-main')) {
                 { src: 'assets/photography/IMG-2946.jpg', title: '' },
                 { src: 'assets/photography/IMG-2948.jpg', title: '' },
                 { src: 'assets/photography/IMG-0111.jpg', title: '' },
-                { src: 'assets/photography/IMG-2896.jpg', title: '' }
+                { src: 'assets/photography/IMG-2.jpg', title: '' }
             ]
         },
         'time': {
