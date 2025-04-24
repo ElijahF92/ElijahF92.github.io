@@ -124,21 +124,35 @@ if (document.querySelector('.photography-main')) {
                 { src: 'assets/photography/IMG-3022.jpg', title: '' },
                 { src: 'assets/photography/IMG-2961.jpg', title: '' },
                 { src: 'assets/photography/IMG-2048.jpg', title: '' },
-                { src: 'assets/photography/IMG-1551.jpg', title: '' },
+                // { src: 'assets/photography/IMG-1551.jpg', title: '' },
                 { src: 'assets/photography/IMG-2906.jpg', title: '' },
                 { src: 'assets/photography/IMG-1004.jpg', title: '' },
                 { src: 'assets/photography/IMG-1066.jpg', title: '' },
                 { src: 'assets/photography/IMG-1088.jpg', title: '' },
                 { src: 'assets/photography/IMG-1461.jpg', title: '' },
-                { src: 'assets/photography/IMG-1551.jpg', title: '' },
+                // { src: 'assets/photography/IMG-1551.jpg', title: '' },
                 { src: 'assets/photography/IMG-2911.jpg', title: '' },
                 { src: 'assets/photography/IMG-2945.jpg', title: '' },
                 { src: 'assets/photography/IMG-2230.jpg', title: '' },
                 { src: 'assets/photography/IMG-2927.jpg', title: '' },
                 { src: 'assets/photography/IMG-3099.jpg', title: '' },
-                { src: 'assets/photography/IMG-2975.jpg', title: '' },
+                // { src: 'assets/photography/IMG-2975.jpg', title: '' },
                 { src: 'assets/photography/IMG-2888.jpg', title: '' },
-                { src: 'assets/photography/IMG-2957.jpg', title: '' },
+                { src: 'assets/photography/IMG-2957.jpg', title: '' }
+            ]
+        },
+        'architecture': {
+            title: 'Architecture in Hong Kong',
+            description: '',
+            images: [
+                { src: 'assets/photography/architecture/IMG-2975.jpg', title: '' },
+                { src: 'assets/photography/architecture/IMG-999.jpg', title: '' },
+                { src: 'assets/photography/architecture/IMG-1050.jpg', title: '' },
+                { src: 'assets/photography/architecture/IMG-1094.jpg', title: '' },
+                { src: 'assets/photography/architecture/IMG-1095.jpg', title: '' },
+                { src: 'assets/photography/architecture/IMG-1475.jpg', title: '' },
+                { src: 'assets/photography/architecture/IMG-2905.jpg', title: '' },
+                { src: 'assets/photography/architecture/IMG-3093.jpg', title: '' },
             ]
         }
     };
