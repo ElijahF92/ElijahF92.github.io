@@ -120,7 +120,7 @@ if (document.querySelector('.photography-main')) {
                 { src: 'assets/photography/IMG-2948.jpg', title: '' },
                 { src: 'assets/photography/IMG-3079.jpg', title: '' },
                 { src: 'assets/photography/IMG-3095.jpg', title: '' },
-                { src: 'assets/photography/IMG-3023.jpg', title: '' },
+                { src: 'assets/photography/IMG-3023.jpg', title: 'Residue' },
                 { src: 'assets/photography/IMG-3022.jpg', title: '' },
                 { src: 'assets/photography/IMG-2961.jpg', title: '' },
                 { src: 'assets/photography/IMG-2048.jpg', title: '' },
